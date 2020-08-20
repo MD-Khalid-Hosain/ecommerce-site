@@ -114,6 +114,9 @@
                              <li><button type="submit" class="btn btn-danger">Add to Cart</button></li>
                            </form>
                          </ul>
+                            @if(session('stock_Msg'))
+                                <p class="alert alert-danger" style="color:black;font-size:15px;font-weight:500">{{session('stock_Msg')}}</p>
+                            @endif
                          <ul class="cetagory">
                              <li>Categories:</li>
                              <li><a href="#">{{App\Category::find($product_info->category_id)->category_name}}</a></li>
@@ -213,7 +216,7 @@
                                          </div>
                                          <div class="review-content">
                                              <h3><a href="#">{{App\User::find($review->user_id)->name}}</a></h3>
-                                             <span>{{ $review->updated_at->format('d/m/Y H:i:s A') }}</span>
+                                             {{-- <span>{{ $review->updated_at->format('d/m/Y H:i:s A') }}</span> --}}
                                              <p>{{ $review->review }}</p>
                                              <ul class="rating">
                                                @if ($review->star==1)
@@ -262,7 +265,7 @@
                                  <h4>Add A Review</h4>
                                  @Auth
                                    @if (App\order_list::where('user_id',Auth::id())->where('product_id',$product_info->id)->whereNull('review')->exists())
-                                     <form class="" action="{{ url('add/review') }}" method="post">
+                                     <form class="" action="{{ route('add_review') }}" method="post">
                                        @csrf
                                        <input type="hidden" name="product_id" value="{{ $product_info->id }}">
                                      <div class="ratting-wrap">

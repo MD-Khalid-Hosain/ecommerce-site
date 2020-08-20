@@ -63,7 +63,7 @@ Route::get('view/profile','HomeController@view_profile')->name('view_profile');
 Route::get('home/customer','CustomerController@homecustomer');
 Route::get('order/download/{order_id}','CustomerController@orderdownload');
 Route::get('send/sms/{order_id}','CustomerController@sendsms');
-Route::post('add/review','CustomerController@addreview');
+Route::post('add/review','CustomerController@addreview')->name('add_review');
 Route::get('total/review','CustomerController@totalreview');
 
 

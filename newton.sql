@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2020 at 04:50 PM
+-- Generation Time: Jul 01, 2020 at 04:43 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -41,8 +41,8 @@ CREATE TABLE `abouts` (
 --
 
 INSERT INTO `abouts` (`id`, `about_title`, `about_discription`, `activation`, `created_at`, `updated_at`) VALUES
-(1, 'WELCOME OUR STORE!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic amet repellendus assumenda voluptatem iste. In exercitationem aliquam eligendi sint quidem natus eum aliquid laboriosam id adipisci excepturi voluptas, eaque, doloribus corporis ducimus ut suscipit alias ad! Quidem vel sint quasi fugit officiis aliquam, provident suscipit veritatis sunt amet! Rem maxime amet quo laudantium deleniti quia ipsum delectus, nesciunt dignissimos debitis incidunt sed nisi earum cumque assumenda, voluptatibus, laborum harum perspiciatis ut magnam sunt. Facere, recusandae impedit. Nisi iste, officiis?', 1, '2020-06-16 17:37:00', '2020-06-16 17:42:32'),
-(2, 'WELCOME OUR HISTORY!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic amet repellendus assumenda voluptatem iste. In exercitationem aliquam eligendi sint quidem natus eum aliquid laboriosam id adipisci excepturi voluptas, eaque, doloribus corporis ducimus ut suscipit alias ad! Quidem vel sint quasi fugit officiis aliquam, provident suscipit veritatis sunt amet! Rem maxime amet quo laudantium deleniti quia ipsum delectus, nesciunt dignissimos debitis incidunt sed nisi earum cumque assumenda, voluptatibus, laborum harum perspiciatis ut magnam sunt. Facere, recusandae impedit. Nisi iste, officiis?', 0, '2020-06-16 17:37:14', '2020-06-16 17:42:31');
+(1, 'WELCOME OUR STORE!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic amet repellendus assumenda voluptatem iste. In exercitationem aliquam eligendi sint quidem natus eum aliquid laboriosam id adipisci excepturi voluptas, eaque, doloribus corporis ducimus ut suscipit alias ad! Quidem vel sint quasi fugit officiis aliquam, provident suscipit veritatis sunt amet! Rem maxime amet quo laudantium deleniti quia ipsum delectus, nesciunt dignissimos debitis incidunt sed nisi earum cumque assumenda, voluptatibus, laborum harum perspiciatis ut magnam sunt. Facere, recusandae impedit. Nisi iste, officiis?', 0, '2020-06-16 17:37:00', '2020-06-22 12:12:40'),
+(2, 'WELCOME OUR HISTORY!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic amet repellendus assumenda voluptatem iste. In exercitationem aliquam eligendi sint quidem natus eum aliquid laboriosam id adipisci excepturi voluptas, eaque, doloribus corporis ducimus ut suscipit alias ad! Quidem vel sint quasi fugit officiis aliquam, provident suscipit veritatis sunt amet! Rem maxime amet quo laudantium deleniti quia ipsum delectus, nesciunt dignissimos debitis incidunt sed nisi earum cumque assumenda, voluptatibus, laborum harum perspiciatis ut magnam sunt. Facere, recusandae impedit. Nisi iste, officiis?', 1, '2020-06-16 17:37:14', '2020-06-22 12:12:40');
 
 -- --------------------------------------------------------
 
@@ -104,8 +104,7 @@ CREATE TABLE `carts` (
 --
 
 INSERT INTO `carts` (`id`, `ip_address`, `product_id`, `product_amount`, `created_at`, `updated_at`) VALUES
-(13, '127.0.0.1', 5, 1, '2020-06-18 14:10:30', NULL),
-(14, '127.0.0.1', 4, 1, '2020-06-18 14:15:49', NULL);
+(31, '127.0.0.1', 12, 2, '2020-06-22 12:33:36', '2020-06-22 12:34:14');
 
 -- --------------------------------------------------------
 
@@ -128,12 +127,12 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `category_name`, `added_by`, `category_image`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'sports', 1, '1.png', '2020-06-10 16:00:00', '2020-06-16 18:07:30', NULL),
-(2, 'women', 1, '2.jpeg', '2020-06-10 16:01:09', '2020-06-10 16:01:11', NULL),
-(3, 'Bags & Luggage', 1, '3.webp', '2020-06-10 16:01:44', '2020-06-10 16:01:45', NULL),
-(4, 'Books & Stationeries', 1, '4.jpeg', '2020-06-10 16:02:22', '2020-06-10 16:02:22', NULL),
-(6, 'toys', 1, '6.jpeg', '2020-06-10 16:03:25', '2020-06-10 16:03:26', NULL),
-(7, 'Men', 1, '7.jpeg', '2020-06-10 16:44:56', '2020-06-10 16:44:56', NULL);
+(1, 'sportsssss', 6, '1.png', '2020-06-10 16:00:00', '2020-06-22 12:13:54', NULL),
+(2, 'women', 6, '2.jpeg', '2020-06-10 16:01:09', '2020-06-10 16:01:11', NULL),
+(3, 'Bags & Luggage', 6, '3.webp', '2020-06-10 16:01:44', '2020-06-10 16:01:45', NULL),
+(4, 'Books & Stationeries', 6, '4.jpeg', '2020-06-10 16:02:22', '2020-06-10 16:02:22', NULL),
+(6, 'toys', 6, '6.jpeg', '2020-06-10 16:03:25', '2020-06-10 16:03:26', NULL),
+(7, 'Men', 6, '7.jpeg', '2020-06-10 16:44:56', '2020-06-10 16:44:56', NULL);
 
 -- --------------------------------------------------------
 
@@ -212,8 +211,8 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `Contact_address`, `Contact_email`, `Contact_phone`, `activation`, `created_at`, `updated_at`) VALUES
-(2, 'borhunuddin Bhola', 'naim.ahtasam@gmail.com', 1877827589, 0, '2020-06-15 18:35:31', '2020-06-16 18:35:15'),
-(3, 'Borishal , Bhola , Borhunuddin.2 no woard', 'naim.ahtasam1@gmail.com', 1768176261, 1, '2020-06-15 19:20:43', '2020-06-16 18:35:15');
+(2, 'borhunuddin Bhola', 'naim.ahtasam@gmail.com', 1877827589, 0, '2020-06-15 18:35:31', '2020-06-22 12:17:03'),
+(3, 'Borishal , Bhola , Borhunuddin.2 no woard', 'naim.ahtasam1@gmail.com', 1768176261, 1, '2020-06-15 19:20:43', '2020-06-22 12:17:03');
 
 -- --------------------------------------------------------
 
@@ -271,7 +270,9 @@ INSERT INTO `coupons` (`id`, `coupon_name`, `coupon_discount`, `coupon_validity`
 (9, 'BD8', 8, '2020-06-24', '2020-06-10 16:52:59', NULL),
 (10, 'BD9', 9, '2020-06-27', '2020-06-10 16:53:20', NULL),
 (11, 'BD25', 25, '2020-06-30', '2020-06-10 16:53:46', NULL),
-(12, 'BD50', 50, '2020-07-01', '2020-06-10 16:54:04', NULL);
+(12, 'BD50', 50, '2020-07-01', '2020-06-10 16:54:04', NULL),
+(13, 'BD15', 15, '2020-06-22', '2020-06-22 12:16:24', NULL),
+(14, 'BD30', 30, '2020-06-30', '2020-06-22 12:31:08', NULL);
 
 -- --------------------------------------------------------
 
@@ -314,8 +315,7 @@ INSERT INTO `faqs` (`id`, `faq_question`, `faq_answer`, `created_at`, `updated_a
 (4, 'What should be on a FAQ page?', 'Use “FAQ” or “Frequently Asked Questions” as the page title.', '2020-06-15 10:39:45', NULL, NULL),
 (5, 'How do I create a FAQ?', 'Gather Your Most Frequently Asked Questions. ...', '2020-06-15 10:40:21', NULL, NULL),
 (6, 'What is a FAQ document?', 'Pronounced as separate letters, or as \"fak,\" and short for frequently asked questions,', '2020-06-15 10:40:50', NULL, NULL),
-(7, 'What is the most ridiculous question ever?', 'What is the most ridiculous question ever?', '2020-06-15 10:41:36', NULL, NULL),
-(8, 'How do I write a FAQ?', 'Use “FAQ” or “Frequently Asked Questions” as the page title.\r\nWrite questions from the point of view of your customer.\r\nWrite the FAQ sheet in an actual question-and-answer format.\r\nKeep answers short.\r\nFully answer the question, don\'t just link to a different page.', '2020-06-15 10:42:17', NULL, NULL);
+(7, 'What is the most ridiculous question ever?', 'What is the most ridiculous question ever?', '2020-06-15 10:41:36', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -334,7 +334,6 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
 (2, '2014_10_12_100000_create_password_resets_table', 1),
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2020_02_13_013527_create_faqs_table', 1),
@@ -352,7 +351,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (16, '2020_05_17_230935_create_permission_tables', 1),
 (18, '2020_06_06_160038_create_contactmessages_table', 1),
 (20, '2020_06_04_220157_create_contacts_table', 2),
-(23, '2020_06_07_215520_create_abouts_table', 3);
+(23, '2020_06_07_215520_create_abouts_table', 3),
+(24, '2020_06_18_233349_create_pofiles_table', 4),
+(25, '2014_10_12_000000_create_users_table', 5);
 
 -- --------------------------------------------------------
 
@@ -373,45 +374,123 @@ CREATE TABLE `model_has_permissions` (
 INSERT INTO `model_has_permissions` (`permission_id`, `model_type`, `model_id`) VALUES
 (1, 'App\\User', 1),
 (1, 'App\\User', 2),
+(1, 'App\\User', 6),
+(1, 'App\\User', 7),
+(1, 'App\\User', 9),
+(1, 'App\\User', 15),
 (2, 'App\\User', 1),
 (2, 'App\\User', 2),
+(2, 'App\\User', 6),
+(2, 'App\\User', 7),
+(2, 'App\\User', 9),
+(2, 'App\\User', 15),
 (3, 'App\\User', 1),
 (3, 'App\\User', 2),
+(3, 'App\\User', 6),
+(3, 'App\\User', 7),
+(3, 'App\\User', 9),
+(3, 'App\\User', 15),
 (4, 'App\\User', 1),
 (4, 'App\\User', 2),
+(4, 'App\\User', 6),
+(4, 'App\\User', 7),
+(4, 'App\\User', 9),
+(4, 'App\\User', 15),
 (5, 'App\\User', 1),
 (5, 'App\\User', 2),
+(5, 'App\\User', 6),
+(5, 'App\\User', 7),
+(5, 'App\\User', 9),
+(5, 'App\\User', 15),
 (6, 'App\\User', 1),
 (6, 'App\\User', 2),
+(6, 'App\\User', 6),
+(6, 'App\\User', 7),
+(6, 'App\\User', 9),
+(6, 'App\\User', 15),
 (7, 'App\\User', 1),
 (7, 'App\\User', 2),
+(7, 'App\\User', 6),
+(7, 'App\\User', 7),
+(7, 'App\\User', 9),
+(7, 'App\\User', 15),
 (8, 'App\\User', 1),
 (8, 'App\\User', 2),
+(8, 'App\\User', 6),
+(8, 'App\\User', 7),
+(8, 'App\\User', 9),
+(8, 'App\\User', 15),
 (9, 'App\\User', 1),
 (9, 'App\\User', 2),
+(9, 'App\\User', 6),
+(9, 'App\\User', 7),
+(9, 'App\\User', 9),
+(9, 'App\\User', 15),
 (10, 'App\\User', 1),
 (10, 'App\\User', 2),
+(10, 'App\\User', 6),
+(10, 'App\\User', 7),
+(10, 'App\\User', 9),
+(10, 'App\\User', 15),
 (11, 'App\\User', 1),
 (11, 'App\\User', 2),
+(11, 'App\\User', 6),
+(11, 'App\\User', 7),
+(11, 'App\\User', 9),
+(11, 'App\\User', 15),
 (12, 'App\\User', 1),
 (12, 'App\\User', 2),
+(12, 'App\\User', 6),
+(12, 'App\\User', 7),
+(12, 'App\\User', 9),
+(12, 'App\\User', 15),
 (13, 'App\\User', 1),
 (13, 'App\\User', 2),
+(13, 'App\\User', 6),
+(13, 'App\\User', 7),
+(13, 'App\\User', 9),
+(13, 'App\\User', 15),
 (14, 'App\\User', 1),
 (14, 'App\\User', 2),
+(14, 'App\\User', 6),
+(14, 'App\\User', 7),
+(14, 'App\\User', 9),
+(14, 'App\\User', 15),
 (15, 'App\\User', 1),
 (15, 'App\\User', 2),
+(15, 'App\\User', 6),
+(15, 'App\\User', 7),
+(15, 'App\\User', 9),
+(15, 'App\\User', 15),
 (16, 'App\\User', 1),
 (16, 'App\\User', 2),
-(17, 'App\\User', 1),
+(16, 'App\\User', 6),
+(16, 'App\\User', 7),
+(16, 'App\\User', 9),
+(16, 'App\\User', 15),
 (17, 'App\\User', 2),
-(18, 'App\\User', 1),
+(17, 'App\\User', 6),
+(17, 'App\\User', 7),
+(17, 'App\\User', 9),
+(17, 'App\\User', 15),
 (18, 'App\\User', 2),
-(19, 'App\\User', 1),
+(18, 'App\\User', 6),
+(18, 'App\\User', 7),
+(18, 'App\\User', 9),
+(18, 'App\\User', 15),
 (19, 'App\\User', 2),
-(20, 'App\\User', 1),
+(19, 'App\\User', 6),
+(19, 'App\\User', 7),
+(19, 'App\\User', 9),
+(19, 'App\\User', 15),
 (20, 'App\\User', 2),
-(21, 'App\\User', 1);
+(20, 'App\\User', 6),
+(20, 'App\\User', 7),
+(20, 'App\\User', 9),
+(20, 'App\\User', 15),
+(21, 'App\\User', 6),
+(21, 'App\\User', 7),
+(21, 'App\\User', 15);
 
 -- --------------------------------------------------------
 
@@ -431,8 +510,13 @@ CREATE TABLE `model_has_roles` (
 
 INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (1, 'App\\User', 2),
+(1, 'App\\User', 7),
+(1, 'App\\User', 9),
 (2, 'App\\User', 1),
-(3, 'App\\User', 4);
+(2, 'App\\User', 6),
+(3, 'App\\User', 1),
+(3, 'App\\User', 4),
+(3, 'App\\User', 8);
 
 -- --------------------------------------------------------
 
@@ -473,7 +557,25 @@ INSERT INTO `orders` (`id`, `user_id`, `full_name`, `email_address`, `phone_numb
 (7, 3, 'shahin sir', 'shahinsir@gmail.com', '01768176261', 1, 1, 'uttora', 'About Naviforce : Naviforce itself is an amazing product a combination of an impressive look,', 8750, 4375, 'BD50', 1, 1, '2020-06-14 16:34:27', NULL),
 (8, 1, 'Naim Rahman Ahtasam', 'naim.ahtasam1@gmail.com', '01768176261', 1, 1, 'uttora', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 50000, 50000, NULL, 1, 1, '2020-06-16 18:40:58', NULL),
 (9, 1, 'Naim Rahman Ahtasam', 'naim.ahtasam1@gmail.com', '01761166155', 2, 5, 'Borhunuddin Bhola Borishal', 'Borhunuddin Bhola Borishal', 360, 324, 'BD10', 2, 2, '2020-06-17 09:29:00', NULL),
-(10, 1, 'Naim Rahman Ahtasam', 'naim.ahtasam1@gmail.com', '01761166155', 2, 5, 'Borhunuddin Bhola Borishal', 'Borhunuddin Bhola Borishal', 360, 324, 'BD10', 2, 2, '2020-06-17 09:29:02', NULL);
+(10, 1, 'Naim Rahman Ahtasam', 'naim.ahtasam1@gmail.com', '01761166155', 2, 5, 'Borhunuddin Bhola Borishal', 'Borhunuddin Bhola Borishal', 360, 324, 'BD10', 2, 2, '2020-06-17 09:29:02', NULL),
+(11, 14, 'shahin sir', 'shahin@gmail.com', '01768176261', 3, 10, 'Borhunuddin Bhola Borishal', 'Borhunuddin Bhola Borishal', 4200, 2100, 'BD50', 2, 2, '2020-06-21 10:11:54', NULL),
+(12, 14, 'shahin sir', 'shahin@gmail.com', '01777676728', 3, 9, 'Borhunuddin Bhola Borishal', 'Borhunuddin Bhola Borishal', 7000, 7000, NULL, 2, 2, '2020-06-21 13:56:58', NULL),
+(13, 15, 'naim ahtasam', 'naim.ahtasam1@gmail.com', '01877827589', 1, 1, 'Borhunuddin Bhola Borishal', 'i need some help', 1000, 1000, NULL, 2, 2, '2020-06-21 14:35:18', NULL),
+(14, 15, 'naim ahtasam', 'naim.ahtasam1@gmail.com', '01877827589', 1, 1, 'Borhunuddin Bhola Borishal', 'i need some help', 1000, 1000, NULL, 2, 2, '2020-06-21 14:35:20', NULL),
+(15, 15, 'naim ahtasam', 'naim.ahtasam1@gmail.com', '01768176261', 2, 5, 'Borhunuddin Bhola Borishal', 'valllllalaokdmcadnc', 6000, 3000, 'BD50', 2, 2, '2020-06-21 18:29:00', NULL),
+(16, 15, 'naim ahtasam', 'naim.ahtasam1@gmail.com', '01768176261', 2, 5, 'Borhunuddin Bhola Borishal', 'valllllalaokdmcadnc', 6000, 3000, 'BD50', 2, 2, '2020-06-21 18:29:02', NULL),
+(17, 15, 'naim ahtasam', 'naim.ahtasam1@gmail.com', '01768176261', 1, 1, 'Borhunuddin Bhola Borishal', 'xcxbvn fgnmm,', 240, 240, NULL, 2, 2, '2020-06-21 18:57:29', NULL),
+(18, 13, 'Shariful Alam', 'shariful@gmail.com', '01768176261', 1, 1, 'Borhunuddin Bhola Borishal', 'valo product', 600, 300, 'BD50', 2, 2, '2020-06-22 06:18:32', NULL),
+(19, 14, 'shahin sir', 'shahin@gmail.com', '01877827589', 3, 9, 'Borhunuddin Bhola Borishal', 'vvvvvvvvvvvvvvvvvv', 6000, 3000, 'BD50', 2, 2, '2020-06-22 06:24:08', NULL),
+(20, 14, 'shahin sir', 'shahin@gmail.com', '01877827589', 3, 9, 'Borhunuddin Bhola Borishal', 'vvvvvvvvvvvvvvvvvv', 6000, 3000, 'BD50', 2, 2, '2020-06-22 06:24:10', NULL),
+(21, 13, 'Shariful Alam', 'shariful@gmail.com', '01777676728', 2, 5, 'Borhunuddin Bhola Borishal', 'valooooooooooo', 1500, 1350, 'BD10', 2, 2, '2020-06-22 06:30:51', NULL),
+(22, 13, 'Shariful Alam', 'shariful@gmail.com', '01877827589', 3, 9, 'Borhunuddin Bhola Borishal', 'Borhunuddin Bhola Borishal', 500, 450, 'BD10', 2, 2, '2020-06-22 06:35:39', NULL),
+(23, 13, 'Shariful Alam', 'shariful@gmail.com', '01768176261', 2, 5, 'Borhunuddin Bhola Borishal', 'bbbhggjhkhc', 210, 210, NULL, 1, 1, '2020-06-22 06:44:23', NULL),
+(24, 13, 'Shariful Alam', 'shariful@gmail.com', '01877827589', 3, 9, 'Borhunuddin Bhola Borishal', 'vvhffgxghbjkn jchjkj;l', 2000, 1800, 'BD10', 2, 2, '2020-06-22 06:55:38', NULL),
+(25, 13, 'Shariful Alam', 'shariful@gmail.com', '01777676728', 3, 9, 'Borhunuddin Bhola Borishal', 'sfdsgfgv safghgjhkjhf', 7500, 6750, 'BD10', 1, 1, '2020-06-22 06:57:45', NULL),
+(26, 13, 'Shariful Alam', 'shariful@gmail.com', '01877827589', 2, 5, 'Borhunuddin Bhola Borishal', 'valooo', 8000, 8000, NULL, 1, 1, '2020-06-22 07:05:34', NULL),
+(27, 15, 'naim ahtasam', 'naim.ahtasam1@gmail.com', '01761166155', 2, 5, 'Borhunuddin Bhola Borishal', 'need this product quickly', 6000, 6000, NULL, 1, 1, '2020-06-22 07:11:21', NULL),
+(28, 15, 'naim ahtasam', 'naim.ahtasam1@gmail.com', '01768176261', 2, 5, 'Borhunuddin Bhola Borishal', 'valo product', 8600, 7740, 'BD10', 1, 1, '2020-06-22 10:27:29', NULL);
 
 -- --------------------------------------------------------
 
@@ -488,7 +590,7 @@ CREATE TABLE `order_lists` (
   `product_id` int(11) NOT NULL,
   `product_amount` int(11) NOT NULL,
   `review` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `star` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `star` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT '0',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -498,14 +600,32 @@ CREATE TABLE `order_lists` (
 --
 
 INSERT INTO `order_lists` (`id`, `user_id`, `order_id`, `product_id`, `product_amount`, `review`, `star`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 4, 2, NULL, '3', '2020-06-10 17:11:42', NULL),
-(2, 2, 2, 4, 1, 'A very very nice product ... The application is also user friendly', '4', '2020-06-10 17:23:12', '2020-06-10 17:27:58'),
-(3, 3, 4, 4, 1, 'About Naviforce : Naviforce itself is an amazing product a combination of an impressive look,', '3', '2020-06-14 16:29:37', '2020-06-14 16:31:27'),
-(4, 3, 5, 3, 1, 'About Naviforce : Naviforce itself is an amazing product a combination of an impressive look,', '4', '2020-06-14 16:32:32', '2020-06-14 16:37:48'),
-(5, 3, 6, 2, 2, 'About Naviforce : Naviforce itself is an amazing product a combination of an impressive look,', '3', '2020-06-14 16:33:19', '2020-06-14 16:35:36'),
-(6, 3, 7, 1, 7, 'About Naviforce: Naviforce itself is an amazing product a combination of an impressive look,', '2', '2020-06-14 16:34:27', '2020-06-14 16:36:16'),
-(7, 1, 8, 4, 50, NULL, NULL, '2020-06-16 18:40:58', NULL),
-(8, 1, 9, 3, 3, NULL, NULL, '2020-06-17 09:29:00', NULL);
+(1, 6, 1, 4, 2, 'A very very nice product ... The application is also user friendly', '3', '2020-06-10 17:11:42', NULL),
+(2, 6, 2, 4, 1, 'A very very nice product ... The application is also user friendly', '4', '2020-06-10 17:23:12', '2020-06-10 17:27:58'),
+(3, 6, 4, 4, 1, 'About Naviforce : Naviforce itself is an amazing product a combination of an impressive look,', '3', '2020-06-14 16:29:37', '2020-06-14 16:31:27'),
+(4, 6, 5, 3, 1, 'About Naviforce : Naviforce itself is an amazing product a combination of an impressive look,', '4', '2020-06-14 16:32:32', '2020-06-14 16:37:48'),
+(5, 6, 6, 2, 2, 'About Naviforce : Naviforce itself is an amazing product a combination of an impressive look,', '3', '2020-06-14 16:33:19', '2020-06-14 16:35:36'),
+(6, 6, 7, 1, 7, 'About Naviforce: Naviforce itself is an amazing product a combination of an impressive look,', '2', '2020-06-14 16:34:27', '2020-06-14 16:36:16'),
+(7, 6, 8, 4, 50, NULL, '3', '2020-06-16 18:40:58', NULL),
+(8, 6, 9, 3, 3, NULL, '4', '2020-06-17 09:29:00', NULL),
+(9, 14, 11, 5, 1, NULL, '5', '2020-06-21 10:11:54', NULL),
+(10, 14, 11, 4, 4, 'valo product', '4', '2020-06-21 10:11:55', '2020-06-21 13:58:46'),
+(11, 14, 12, 4, 7, NULL, '3', '2020-06-21 13:56:59', NULL),
+(12, 15, 13, 4, 1, NULL, '2', '2020-06-21 14:35:18', NULL),
+(13, 15, 15, 12, 3, NULL, '3', '2020-06-21 18:29:00', NULL),
+(14, 15, 17, 3, 2, NULL, '2', '2020-06-21 18:57:29', NULL),
+(15, 13, 18, 5, 3, NULL, '2', '2020-06-22 06:18:32', NULL),
+(16, 14, 19, 12, 3, NULL, '4', '2020-06-22 06:24:08', NULL),
+(17, 13, 21, 7, 3, 'valo product', '5', '2020-06-22 06:30:51', '2020-06-22 06:33:18'),
+(18, 13, 22, 11, 1, 'valo', '5', '2020-06-22 06:35:40', '2020-06-22 06:37:00'),
+(19, 13, 23, 10, 3, 'valoo', '4', '2020-06-22 06:44:23', '2020-06-22 07:08:52'),
+(20, 13, 24, 9, 1, NULL, '1', '2020-06-22 06:55:38', NULL),
+(21, 13, 25, 8, 3, 'valoo', '1', '2020-06-22 06:57:45', '2020-06-22 07:07:36'),
+(22, 13, 26, 7, 4, NULL, '0', '2020-06-22 07:05:34', NULL),
+(23, 13, 26, 12, 3, NULL, '0', '2020-06-22 07:05:34', NULL),
+(24, 15, 27, 9, 3, NULL, '0', '2020-06-22 07:11:21', NULL),
+(25, 15, 28, 12, 4, NULL, '0', '2020-06-22 10:27:29', NULL),
+(26, 15, 28, 3, 5, NULL, '0', '2020-06-22 10:27:30', NULL);
 
 -- --------------------------------------------------------
 
@@ -563,6 +683,32 @@ INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `pofiles`
+--
+
+CREATE TABLE `pofiles` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `profile_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `profile_email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `profile_phone` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `profile_address` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `profile_image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `pofiles`
+--
+
+INSERT INTO `pofiles` (`id`, `user_id`, `profile_name`, `profile_email`, `profile_phone`, `profile_address`, `profile_image`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Naim Rahman Ahtasam', 'naim.ahtasam1@gmail.com', '01768176261', 'uttora.Dhaka', 'IMG_1103-2.jpg', '2020-06-18 18:18:03', NULL),
+(2, 1, 'Naim Rahman Ahtasam', 'naim.ahtasam1@gmail.com', '01768176261', 'uttora.Dhaka', 'IMG_1103-2.jpg', '2020-06-18 19:07:22', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `products`
 --
 
@@ -587,9 +733,15 @@ CREATE TABLE `products` (
 INSERT INTO `products` (`id`, `product_name`, `product_price`, `product_short_description`, `product_long_description`, `category_id`, `product_thumbnail_image`, `product_slug`, `product_quantity`, `created_at`, `updated_at`) VALUES
 (1, 'Cricket Bat - Wooden', '1250', 'About Cricket Bat\r\n\r\nCricket is very popular game now a days. That\'s why cricket bat is widely used all over the world. The blade of a cricket bat is a Wooden block that is generally flat on the striking face and with a ridge on the reverse (back) which concentrates wood in the middle where the ball is generally hit. The bat is traditionally made from willow wood, specifically from a variety of White Willow called Cricket Bat Willow (Salix alba var. caerulea), treated with raw (unboiled) linseed oil, which has a protective function. This variety of willow is used as it is very tough and shock-resistant, not being significantly dented nor splintering on the impact of a cricket ball at high speed, while', 'About Cricket Bat\r\n\r\nCricket is very popular game now a days. That\'s why cricket bat is widely used all over the world. The blade of a cricket bat is a Wooden block that is generally flat on the striking face and with a ridge on the reverse (back) which concentrates wood in the middle where the ball is generally hit. The bat is traditionally made from willow wood, specifically from a variety of White Willow called Cricket Bat Willow (Salix alba var. caerulea), treated with raw (unboiled) linseed oil, which has a protective function. This variety of willow is used as it is very tough and shock-resistant, not being significantly dented nor splintering on the impact of a cricket ball at high speed, while', 1, '1.png', 'cricket-bat-wooden-1591805199', 43, '2020-06-10 16:06:39', '2020-06-14 16:34:27'),
 (2, 'Xiaomi leisure style sports backpack 23L - Blue', '500', 'Brand: Xiaomi\r\nName: Xiaomi Leisure Sports Backpack\r\nCapacity: 23L\r\nTime to market: Summer of 2019\r\nColor Classification: Black Blue Gray\r\nInternal structure: zipper pocket, ID bag, laminated zipper bag, computer pocket, camera pocket', 'Brand: Xiaomi\r\nName: Xiaomi Leisure Sports Backpack\r\nCapacity: 23L\r\nTime to market: Summer of 2019\r\nColor Classification: Black Blue Gray\r\nInternal structure: zipper pocket, ID bag, laminated zipper bag, computer pocket, camera pocket', 3, '2.webp', 'xiaomi-leisure-style-sports-backpack-23l-blue-1591807158', 48, '2020-06-10 16:39:18', '2020-06-14 16:33:19'),
-(3, 'MI Aluminium Roller Ball Pen - Gold', '120', '● Switzerland imported refill: smooth writing and smear-proof, retractable and refillable\r\n● 0.5mm fine point draws razor-sharp, consistent lines\r\n● Handy retractable and rotatable design, convenient to use\r\n● All-metal precision connection parts, 50,000 times rotation life test', '● Switzerland imported refill: smooth writing and smear-proof, retractable and refillable\r\n● 0.5mm fine point draws razor-sharp, consistent lines\r\n● Handy retractable and rotatable design, convenient to use\r\n● All-metal precision connection parts, 50,000 times rotation life test', 4, '3.jpeg', 'mi-aluminium-roller-ball-pen-gold-1591807284', 56, '2020-06-10 16:41:24', '2020-06-17 09:29:00'),
-(4, 'Watch For Men - Golden', '1000', 'About Naviforce :\r\nNaviforce itself is an amazing product a combination of an impressive look, excellent quality at affordable price. Made of solid and durable material, combined with imported Japan movement, makes Naviforce as a reliable choice. Customer satisfaction are guaranteed. NAVIFORCE Watch is International Men Sport Watch Brand, which already registered in Germany, Italy, United Kingdom, United States, Korea, Turkey, HongKong, Thailand etc. In the past 10 years,', 'About Naviforce :\r\nNaviforce itself is an amazing product a combination of an impressive look, excellent quality at affordable price. Made of solid and durable material, combined with imported Japan movement, makes Naviforce as a reliable choice. Customer satisfaction are guaranteed. NAVIFORCE Watch is International Men Sport Watch Brand, which already registered in Germany, Italy, United Kingdom, United States, Korea, Turkey, HongKong, Thailand etc. In the past 10 years,', 7, '4.jpeg', 'watch-for-men-golden-1591807646', 50, '2020-06-10 16:47:26', '2020-06-16 18:43:12'),
-(5, 'Hunter Fashionable Backpack For Men - Black and Grey', '200', 'SKU: 0X4AF72\r\n\r\nBRAND : Individual Collections  |  More Regular Backpack from Individual Collections', 'SKU: 0X4AF72\r\n\r\nBRAND : Individual Collections  |  More Regular Backpack from Individual Collections', 3, '5.png', 'hunter-fashionable-backpack-for-men-black-and-grey-1592165512', 50, '2020-06-14 20:11:52', '2020-06-14 20:11:56');
+(3, 'MI Aluminium Roller Ball Pen - Gold', '120', '● Switzerland imported refill: smooth writing and smear-proof, retractable and refillable\r\n● 0.5mm fine point draws razor-sharp, consistent lines\r\n● Handy retractable and rotatable design, convenient to use\r\n● All-metal precision connection parts, 50,000 times rotation life test', '● Switzerland imported refill: smooth writing and smear-proof, retractable and refillable\r\n● 0.5mm fine point draws razor-sharp, consistent lines\r\n● Handy retractable and rotatable design, convenient to use\r\n● All-metal precision connection parts, 50,000 times rotation life test', 4, '3.jpeg', 'mi-aluminium-roller-ball-pen-gold-1591807284', 49, '2020-06-10 16:41:24', '2020-06-22 10:27:30'),
+(4, 'Watch For Men - Golden', '1000', 'About Naviforce :\r\nNaviforce itself is an amazing product a combination of an impressive look, excellent quality at affordable price. Made of solid and durable material, combined with imported Japan movement, makes Naviforce as a reliable choice. Customer satisfaction are guaranteed. NAVIFORCE Watch is International Men Sport Watch Brand, which already registered in Germany, Italy, United Kingdom, United States, Korea, Turkey, HongKong, Thailand etc. In the past 10 years,', 'About Naviforce :\r\nNaviforce itself is an amazing product a combination of an impressive look, excellent quality at affordable price. Made of solid and durable material, combined with imported Japan movement, makes Naviforce as a reliable choice. Customer satisfaction are guaranteed. NAVIFORCE Watch is International Men Sport Watch Brand, which already registered in Germany, Italy, United Kingdom, United States, Korea, Turkey, HongKong, Thailand etc. In the past 10 years,', 7, '4.jpeg', 'watch-for-men-golden-1591807646', 38, '2020-06-10 16:47:26', '2020-06-21 14:35:18'),
+(5, 'Hunter Fashionable Backpack For Men - Black and Grey', '200', 'SKU: 0X4AF72\r\n\r\nBRAND : Individual Collections  |  More Regular Backpack from Individual Collections', 'SKU: 0X4AF72\r\n\r\nBRAND : Individual Collections  |  More Regular Backpack from Individual Collections', 3, '5.png', 'hunter-fashionable-backpack-for-men-black-and-grey-1592165512', 46, '2020-06-14 20:11:52', '2020-06-22 06:18:32'),
+(7, 'Women\'s Palazzo LT GREEN PRINTED', '500', 'SKU: 0X25370\r\n\r\nBRAND : Individual Collections  |  More Palazzo Pants from Individual Collections', 'SKU: 0X25370\r\n\r\nBRAND : Individual Collections  |  More Palazzo Pants from Individual Collections', 2, '7.jpeg', 'womens-palazzo-lt-green-printed-1592750562', 493, '2020-06-21 14:42:42', '2020-06-22 07:05:34'),
+(8, 'All Shops Gift Card Campaigns Mega Days  News Feed Merchant Zone Help    Women\'s Cotton Embroidery Un-Stitched Three Piece', '2500', 'SKU: 0X443FF\r\n\r\nBRAND : Individual Collections  |  More Unstitch Salwar Kameez from Individual Collections', 'SKU: 0X443FF\r\n\r\nBRAND : Individual Collections  |  More Unstitch Salwar Kameez from Individual Collections', 2, '8.jpeg', 'all-shops-gift-card-campaigns-mega-days-news-feed-merchant-zone-help-womens-cotton-embroidery-un-stitched-three-piece-1592750832', 497, '2020-06-21 14:47:12', '2020-06-22 06:57:45'),
+(9, 'Stainless Steel Watch for Women - Rose Gold', '2000', 'Imported from China\r\nFeature: Bracelet Clasp,Luminous,Fashion & Casual,Quartz,No waterproof\r\nCase Material: Alloy\r\nDial Window Material Type: Glass\r\nCase Shape: Round\r\nPackage- 1 Watch', 'Imported from China\r\nFeature: Bracelet Clasp,Luminous,Fashion & Casual,Quartz,No waterproof\r\nCase Material: Alloy\r\nDial Window Material Type: Glass\r\nCase Shape: Round\r\nPackage- 1 Watch', 2, '9.jpeg', 'stainless-steel-watch-for-women-rose-gold-1592751071', 196, '2020-06-21 14:51:11', '2020-06-22 07:11:22'),
+(10, 'Oil Pastels Color Box - For kids adult and all 12Pcs - Multicolor', '70', 'Product Type: Oil Pastels Color\r\nBrand: Duckey\r\nQuantity Per Box: 12Pcs\r\nPackaging: Set\r\nQuality: Standard', 'Product Type: Oil Pastels Color\r\nBrand: Duckey\r\nQuantity Per Box: 12Pcs\r\nPackaging: Set\r\nQuality: Standard', 4, '10.jpeg', 'oil-pastels-color-box-for-kids-adult-and-all-12pcs-multicolor-1592751627', 47, '2020-06-21 15:00:27', '2020-06-22 06:44:23'),
+(11, 'PPE (personal protective equipment)', '500', 'great for working . as made of non woven fiber air can be passed inside of this', 'great for working . as made of non woven fiber air can be passed inside of this', 4, '11.jpeg', 'ppe-personal-protective-equipment-1592751789', 99, '2020-06-21 15:03:09', '2020-06-22 06:35:40'),
+(12, 'Men Solid Casual Spread Shirt - Misty', '2000', 'This shirt is perfect for the young and smart person which can be worn for any occasion. Made from cotton and white shirt which gives it a distinct identity. Soft material fabrics are used for making shirt as it is supposed to be a comfortable loose fitting dress. It has become more common to find with embroidery, colored embellishments, and tailored cuts. The colorful shirt will definitely make you look smart and stylish.', 'This shirt is perfect for the young and smart person which can be worn for any occasion. Made from cotton and white shirt which gives it a distinct identity. Soft material fabrics are used for making shirt as it is supposed to be a comfortable loose fitting dress. It has become more common to find with embroidery, colored embellishments, and tailored cuts. The colorful shirt will definitely make you look smart and stylish.', 7, '12.png', 'men-solid-casual-spread-shirt-misty-1592751982', 6, '2020-06-21 15:06:22', '2020-06-22 10:27:29');
 
 -- --------------------------------------------------------
 
@@ -625,7 +777,31 @@ INSERT INTO `product_multiple_images` (`id`, `product_id`, `product_multiple_ima
 (13, 4, '4-5.jpeg', '2020-06-10 16:47:28', NULL),
 (14, 4, '4-6.jpeg', '2020-06-10 16:47:29', NULL),
 (15, 6, '6-1.png', '2020-06-14 20:12:36', NULL),
-(16, 6, '6-2.png', '2020-06-14 20:12:36', NULL);
+(16, 6, '6-2.png', '2020-06-14 20:12:36', NULL),
+(17, 7, '7-1.jpeg', '2020-06-21 14:42:46', NULL),
+(18, 7, '7-2.jpeg', '2020-06-21 14:42:47', NULL),
+(19, 7, '7-3.jpeg', '2020-06-21 14:42:47', NULL),
+(20, 7, '7-4.jpeg', '2020-06-21 14:42:48', NULL),
+(21, 7, '7-5.jpeg', '2020-06-21 14:42:49', NULL),
+(22, 7, '7-6.jpeg', '2020-06-21 14:42:49', NULL),
+(23, 8, '8-1.jpeg', '2020-06-21 14:47:13', NULL),
+(24, 8, '8-2.jpeg', '2020-06-21 14:47:13', NULL),
+(25, 8, '8-3.png', '2020-06-21 14:47:14', NULL),
+(26, 8, '8-4.jpeg', '2020-06-21 14:47:14', NULL),
+(27, 9, '9-1.jpeg', '2020-06-21 14:51:12', NULL),
+(28, 9, '9-2.jpeg', '2020-06-21 14:51:12', NULL),
+(29, 9, '9-3.jpeg', '2020-06-21 14:51:13', NULL),
+(30, 9, '9-4.jpeg', '2020-06-21 14:51:13', NULL),
+(31, 10, '10-1.jpeg', '2020-06-21 15:00:28', NULL),
+(32, 10, '10-2.jpeg', '2020-06-21 15:00:28', NULL),
+(33, 11, '11-1.jpeg', '2020-06-21 15:03:10', NULL),
+(34, 11, '11-2.jpeg', '2020-06-21 15:03:10', NULL),
+(35, 11, '11-3.png', '2020-06-21 15:03:10', NULL),
+(36, 11, '11-4.jpeg', '2020-06-21 15:03:11', NULL),
+(37, 12, '12-1.png', '2020-06-21 15:06:23', NULL),
+(38, 12, '12-2.png', '2020-06-21 15:06:24', NULL),
+(39, 12, '12-3.png', '2020-06-21 15:06:24', NULL),
+(40, 12, '12-4.png', '2020-06-21 15:06:25', NULL);
 
 -- --------------------------------------------------------
 
@@ -698,6 +874,9 @@ CREATE TABLE `users` (
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `role` int(11) NOT NULL DEFAULT 2,
+  `contact` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -706,11 +885,12 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `role`, `created_at`, `updated_at`) VALUES
-(1, 'Naim Rahman Ahtasam', 'naim.ahtasam1@gmail.com', '2020-06-10 15:54:06', '$2y$10$UF/t2AOPQY0gyOPPE2Kuo.RAmV9XYzb8VbyMfgCDlvD7NfEHB5k0C', NULL, 1, '2020-06-10 15:50:02', '2020-06-10 15:54:06'),
-(2, 'Naim', 'naim.ahtasam@gmail.com', '2020-06-10 17:19:53', '$2y$10$/WRTJMeYAT13sLjF09kK8O09.UT494S/l9DfWyEWxij.0IPWAke4S', NULL, 1, '2020-06-10 17:18:40', '2020-06-10 17:19:53'),
-(3, 'shahin sir', 'shahinsir@gmail.com', '2020-06-10 17:19:53', '$2y$10$ifzIYZLbNknGKsaaO2SEsuLdGXfoMLMh6Ujw36nOGrlYs8i2ipgFq', NULL, 2, '2020-06-14 16:25:30', '2020-06-14 16:25:30'),
-(4, 'fahim', 'fahim@gmail.com', '2020-06-10 17:19:53', '$2y$10$5qj0ooLpSqgukFEGKJqqF.dtsfFDBUhD7GRr/HTxb.PtEBnnR3Swu', NULL, 1, '2020-06-15 11:20:21', '2020-06-15 11:20:21');
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `role`, `contact`, `address`, `image`, `created_at`, `updated_at`) VALUES
+(6, 'Naim Rahman Ahtasam', 'naim.ahtasam@gmail.com', '2020-06-19 10:17:35', '$2y$10$I8KXSOR.cd1C3LEShL83DObgyLblw1Se94Mdi20XGjno4GjDksKZm', NULL, 1, '01768176261', 'uttora.Dhaka,1230', 'profile_images/EhHYI.jpg', '2020-06-19 16:18:03', '2020-06-19 16:18:03'),
+(8, 'Fahim', 'fahim@gmail.com', '2020-06-19 10:17:35', '$2y$10$2LVi6Yd0VRBhIvj7RxPa7.HtS4bDvWSb3HxkQ7aWSZgXR.4FODLfO', NULL, 1, NULL, NULL, 'profile_images/EhHYI.jpg', '2020-06-19 11:10:17', '2020-06-19 11:10:17'),
+(13, 'Shariful Alam', 'shariful@gmail.com', '2020-06-19 11:18:10', '$2y$10$NgG/8.asrFnP.AuZtt3msOKIXWLK9zIwsSUAKo/p2FxGgRnbDXBIi', NULL, 2, NULL, NULL, 'profile_images/EhHYI.jpg', '2020-06-20 18:53:25', '2020-06-20 18:53:25'),
+(14, 'shahin sir', 'shahin@gmail.com', '2020-06-19 11:18:10', '$2y$10$QD2Ivgd/dVtyzS14ndZTOutZf5ayq6uYAeledYd1w85OhYsnVYHku', NULL, 2, NULL, NULL, NULL, '2020-06-20 19:09:42', '2020-06-20 19:09:42'),
+(15, 'naim ahtasam', 'naim.ahtasam1@gmail.com', '2020-06-21 10:02:31', '$2y$10$wBvFAOnmYnDRhF1xji1IwOEmGiC3Gp5IVFAVfkxnopbAbRS9Rxkqm', NULL, 1, '01768176232', 'uttora.Dhaka,1230', 'profile_images/meyEC.jpg', '2020-06-22 12:07:42', '2020-06-22 12:08:23');
 
 --
 -- Indexes for dumped tables
@@ -835,6 +1015,12 @@ ALTER TABLE `permissions`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `pofiles`
+--
+ALTER TABLE `pofiles`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -892,7 +1078,7 @@ ALTER TABLE `blogs`
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -928,7 +1114,7 @@ ALTER TABLE `countries`
 -- AUTO_INCREMENT for table `coupons`
 --
 ALTER TABLE `coupons`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -946,19 +1132,19 @@ ALTER TABLE `faqs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `order_lists`
 --
 ALTER TABLE `order_lists`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `permissions`
@@ -967,16 +1153,22 @@ ALTER TABLE `permissions`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
+-- AUTO_INCREMENT for table `pofiles`
+--
+ALTER TABLE `pofiles`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `product_multiple_images`
 --
 ALTER TABLE `product_multiple_images`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `roles`
@@ -988,7 +1180,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables

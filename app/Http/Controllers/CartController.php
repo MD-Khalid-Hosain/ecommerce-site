@@ -47,9 +47,18 @@ class CartController extends Controller
 
 function addtocart(Request $request){
   if (Cart::where('ip_address',$request->ip())->where('product_id',$request->product_id)->exists()) {
+    $stock = product::where('id',$request->product_id)->first();
+    if($stock->product_quantity < $request->product_amount){
+      return back()->with('stock_Msg','Stock is not enough');
+    }
     Cart::where('ip_address',$request->ip())->where('product_id',$request->product_id)->increment('product_amount',$request->product_amount);
   }
-  else{
+    else{
+      $stock = product::where('id',$request->product_id)->first();
+      if($stock->product_quantity < $request->product_amount){
+        return back()->with('stock_Msg','Stock is not enough');
+      }
+
     DB::table('carts')->insert([
       'ip_address'=>$request->ip(),
       'product_id'=>$request->product_id,

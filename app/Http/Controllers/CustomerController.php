@@ -42,8 +42,8 @@ class CustomerController extends Controller
 $number=" $order_info->phone_number";
 $text="Hello Your Order id:".$order_info->id.".Tatal payment Done:".$order_info->total;
 $data= array(
-'username'=>"01877827589",
-'password'=>"PASSWORD",
+'username'=>"01620614803",
+'password'=>"G5TDV2MY",
 'number'=>"$number",
 'message'=>"$text"
 );
@@ -73,7 +73,7 @@ if ($sendstatus=1101) {
 
       ]);
 
-      return back();
+        // return back();
     }
 
 
